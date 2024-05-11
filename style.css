@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+.robots {
+  display: flex;
+  justify-content: center;
+}
+.head,
+.torso,
+.left_arm,
+.right_arm,
+.left_leg,
+.right_leg {
+  background-color: #5f93e8;
+}
+.head {
+  height: 9em;
+  width: 10em;
+  border-radius: 50% 50% 0 0;
+  margin: auto;
+  transition: all 1s;
+}
+.eyes {
+  position: relative;
+  display: flex;
+  gap: 3em;
+  top: 6rem;
+  left: 2em;
+}
+.eyes div {
+  background-color: white;
+  height: 1.3em;
+  width: 1.3em;
+  border-radius: 50%;
+}
+.upper_body {
+  display: flex;
+  gap: 0.4em;
+  margin-top: 0.5em;
+}
+.left_arm,
+.right_arm {
+  height: 6em;
+  width: 1.3em;
+  margin-top: 0.4em;
+  border-radius: 0 0 10px 10px;
+  transition: all 1s;
+}
+.torso {
+  height: 10em;
+  width: 10em;
+  border-radius: 0 0 30% 30%;
+}
+.lower_body {
+  display: flex;
+  justify-content: center;
+  gap: 1.5em;
+}
+.left_leg,
+.right_leg {
+  position: relative;
+  bottom: 2em;
+  height: 6em;
+  width: 1.7em;
+  border-radius: 0 0 10px 10px;
+  transition: all 1s;
+}
+.left_arm:hover {
+  transform: rotate(130deg);
+}
+.right_arm:hover {
+  transform: rotate(-130deg);
+}
+.head:hover {
+  transform: scale(1.1);
+}
+.left_leg:hover {
+  transform: rotatex(65deg);
+}
+.right_leg:hover {
+  transform: rotatez(-45deg);
+}
